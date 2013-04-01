@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple images and title scroller with jquery plugin</title>
+<link href="css/scroller_roll.css" rel="stylesheet" type="text/css"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/scroller_roll.js"></script>
+<script language="javascript" type="text/javascript">
+            $(function() {
+                $("#scroller_roll1").scroller_roll({
+                    title_show: 'enable',//enable  disable
+                    time_interval: '15',
+                    window_background_color: "none",
+                    window_padding: '1',
+                    border_size: '0',
+                    border_color: '#0099CC',
+                    images_width: '75',
+                    images_height: '70',
+                    images_margin: '5',
+                    title_size: '12',
+                    title_color: 'black',
+                    show_count: '3'
+                });
+				$("#scroller_roll2").scroller_roll({
+                    title_show: 'enable',//enable  disable
+                    time_interval: '30',
+                    window_background_color: "#C1F0FF",
+                    window_padding: '1',
+                    border_size: '0',
+                    border_color: '#0099CC',
+                    images_width: '90',
+                    images_height: '70',
+                    images_margin: '5',
+                    title_size: '12',
+                    title_color: 'black',
+                    show_count: '3'
+                });
+				$("#scroller_roll3").scroller_roll({
+                    title_show: 'disable',//enable  disable
+                    time_interval: '30',
+                    window_background_color: "none",
+                    window_padding: '1',
+                    border_size: '0',
+                    border_color: '#0099CC',
+                    images_width: '90',
+                    images_height: '70',
+                    images_margin: '5',
+                    title_size: '12',
+                    title_color: 'black',
+                    show_count: '4'
+                });
+            });
+        </script>
+</head>
+    <body>
+    <pre>
+// Copyright 2010 htmldrive.net Inc.<br />/**<br /> * @projectHomepage <a href="http://www.htmldrive.net/go/to/simple-images-scroller">http://www.htmldrive.net/go/to/simple-images-scroller</a><br /> * @projectDescription Simple images scroller with jquery plugin<br /> * @author htmldrive.net<br /> * More script and css style : <a href="http://www.htmldrive.net/go/to/simple-images-scroller">htmldrive.net</a><br /> * @version 1.0<br /> * @license http://www.apache.org/licenses/LICENSE-2.0<br /> */
+    </pre>
+        <h1>Simple images and title scroller with jquery plugin</h1>
+        <h2>Demo1</h2>
+        <div id="scroller_roll1" class="scroller_roll">
+            <ul>
+                <li><a href="#" title="title1"><img src="http://www.htmldrive.net/images/photos/img3_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title2"><img src="http://www.htmldrive.net/images/photos/img4_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title3"><img src="http://www.htmldrive.net/images/photos/img5_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title4"><img src="http://www.htmldrive.net/images/photos/img6_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title5"><img src="http://www.htmldrive.net/images/photos/img7_ss.jpg" width="60" height="60" alt="title"/></a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+<h2>Demo2</h2>
+        <div id="scroller_roll2" class="scroller_roll">
+            <ul>
+                <li><a href="#" title="title1"><img src="http://www.htmldrive.net/images/photos/img3_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title2"><img src="http://www.htmldrive.net/images/photos/img4_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title3"><img src="http://www.htmldrive.net/images/photos/img5_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title4"><img src="http://www.htmldrive.net/images/photos/img6_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title5"><img src="http://www.htmldrive.net/images/photos/img7_ss.jpg" width="60" height="60" alt="title"/></a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        <h2>Demo3</h2>
+        <div id="scroller_roll3" class="scroller_roll">
+            <ul>
+                <li><a href="#" title="title1"><img src="http://www.htmldrive.net/images/photos/img3_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title2"><img src="http://www.htmldrive.net/images/photos/img4_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title3"><img src="http://www.htmldrive.net/images/photos/img5_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title4"><img src="http://www.htmldrive.net/images/photos/img6_ss.jpg" width="60" height="60" alt="title"/></a></li>
+                <li><a href="#" title="title5"><img src="http://www.htmldrive.net/images/photos/img7_ss.jpg" width="60" height="60" alt="title"/></a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        <h2>Usage</h2>
+    <h3>Add js and css files</h3>
+        <pre>&lt;link href=&quot;css/scroller_roll.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;&lt;/link&gt;<br />&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.3.2.min.js&quot;&gt;&lt;/script&gt;<br />&lt;script type=&quot;text/javascript&quot; src=&quot;js/scroller_roll.js&quot;&gt;&lt;/script&gt;
+        </pre>
+    <h3>Add html code</h3>
+        <pre>
+&lt;div id=&quot;scroller_roll1&quot; class=&quot;scroller_roll&quot;&gt;<br />    &lt;ul&gt;<br />        &lt;li&gt;&lt;a href=&quot;link1&quot; title=&quot;title1&quot;&gt;&lt;img src=&quot;images/slideshow_large_1.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />        &lt;li&gt;&lt;a href=&quot;link2&quot; title=&quot;title2&quot;&gt;&lt;img src=&quot;images/slideshow_large_2.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />        &lt;li&gt;&lt;a href=&quot;link3&quot; title=&quot;title3&quot;&gt;&lt;img src=&quot;images/slideshow_large_3.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />        &lt;li&gt;&lt;a href=&quot;link4&quot; title=&quot;title4&quot;&gt;&lt;img src=&quot;images/slideshow_large_4.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />    &lt;/ul&gt;<br />    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;<br />&lt;/div&gt;
+        </pre>
+    <h3>Add start script</h3>
+        <pre>
+        &lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;<br />            $(function() {<br />                $(&quot;#scroller_roll1&quot;).scroller_roll({<br />                    title_show: 'enable',//enable  disable<br />                    time_interval: '15',<br />                    window_background_color: &quot;#C1F0FF&quot;,<br />                    window_padding: '1',<br />                    border_size: '1',<br />                    border_color: '#0099CC',<br />                    images_width: '75',<br />                    images_height: '70',<br />                    images_margin: '5',<br />                    title_size: '12',<br />                    title_color: 'black',<br />                    show_count: '3'<br />                });<br />            });<br />        &lt;/script&gt;
+        </pre>
+    <p>More script and css style: <a href="http://www.htmldrive.net/" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">www.htmldrive.net </a></p>
+    </body>
+</html>
